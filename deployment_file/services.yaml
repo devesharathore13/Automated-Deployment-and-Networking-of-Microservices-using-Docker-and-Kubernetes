@@ -1,0 +1,14 @@
+# web-service/k8s/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: web-service
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 3000
+
