@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: web-service
-        image: your-username/web-service:latest
+        image: deveshrathore13/dynamic:latest
         ports:
         - containerPort: 3000
 
